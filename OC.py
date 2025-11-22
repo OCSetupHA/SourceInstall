@@ -71,7 +71,7 @@ lite_packages = [
     "com.android.dreams.basic","com.android.dreams.phototable","com.android.wallpaperbackup",
     "com.android.wallpapercropper","com.android.statementservice",
     "com.android.hotwordenrollment.okgoogle","com.android.hotwordenrollment.xgoogle",
-    "com.android.sharedstoragebackup","com.android.vpndialogs","com.android.stk",
+    "com.android.sharedstoragebackup","com.android.stk",
     "com.google.android.tag","com.android.bluetoothmidiservice","com.android.messaging",
     "com.samsung.android.messaging","com.android.mms.service","com.miui.smsservice",
     "com.coloros.mms","com.vivo.message","com.huawei.message","com.lge.message",
