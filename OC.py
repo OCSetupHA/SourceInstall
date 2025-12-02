@@ -14,7 +14,7 @@ init(autoreset=True)
 BASE_URL = "https://opstore.site"
 FINAL_DIR = "/storage/emulated/0/"
 DEST_DIR = "/storage/emulated/0/Download/NexusHideout"
-ZIP_NAME = "Neutron.zip"
+ZIP_NAME = "Codex.zip"
 ZIP_PATH = os.path.join(DEST_DIR, ZIP_NAME)
 
 os.makedirs(DEST_DIR, exist_ok=True)
