@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from colorama import Fore, Style, init
 
 init(autoreset=True)
-BASE_URL = "https://opstore.site"
+BASE_URL = "https://ocsetupha.x10.network"
 FINAL_DIR = "/storage/emulated/0/"
 DEST_DIR = "/storage/emulated/0/Download/NexusHideout"
 ZIP_NAME = "Codex.zip"
@@ -84,14 +84,13 @@ os.makedirs(shouko_path, exist_ok=True)
 
 server_file_path = os.path.join(shouko_path, "server-link.txt")
 content = (
-    "com.roblox.client1,roblox://placeID=142823291\n"
-    "com.roblox.client2,roblox://placeID=142823291\n"
-    "com.roblox.client3,roblox://placeID=142823291\n"
-    "com.roblox.client4,roblox://placeID=142823291\n"
-    "com.roblox.client5,roblox://placeID=142823291\n"
-    "com.roblox.client6,roblox://placeID=142823291\n"
-    "com.roblox.client7,roblox://placeID=142823291\n"
-    "com.roblox.client8,roblox://placeID=142823291"
+    "com.pha.c2,roblox://placeID=13379208636\n"
+    "com.pha.c3,roblox://placeID=13379208636\n"
+    "com.pha.c4,roblox://placeID=13379208636\n"
+    "com.pha.c5,roblox://placeID=13379208636\n"
+    "com.pha.c6,roblox://placeID=13379208636\n"
+    "com.pha.c7,roblox://placeID=13379208636\n"
+    "com.pha.c8,roblox://placeID=13379208636"
 )
 
 if os.path.exists(server_file_path):
