@@ -188,6 +188,7 @@ executors = {
     "FrostWare": "/storage/emulated/0/FrostWare/",
     "Evon": "/storage/emulated/0/Evon/",
     "h202": "/storage/emulated/0/h202/",
+    "FluxusZ": "/storage/emulated/0/FluxusZ/",
 }
 workspace_paths = [f"{base_path}Workspace" for base_path in executors.values()] + \
                   [f"{base_path}workspace" for base_path in executors.values()]
@@ -1680,3 +1681,4 @@ if __name__ == "__main__":
         Utilities.log_error(f"Initialization error: {e}")
 
         raise
+
