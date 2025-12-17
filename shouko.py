@@ -1074,6 +1074,7 @@ class ExecutorManager:
             possible_autoexec_paths = [
                 os.path.join(base_path, "Autoexec"),
                 os.path.join(base_path, "Autoexecute"),
+                os.path.join(base_path, "Auto Execute"),
                 os.path.join(base_path, "autoexec")
             ]
 
@@ -1102,6 +1103,7 @@ class ExecutorManager:
             possible_autoexec_paths = [
                 os.path.join(base_path, "Autoexec"),
                 os.path.join(base_path, "Autoexecute"),
+                os.path.join(base_path, "Auto Execute"),
                 os.path.join(base_path, "autoexec")
             ]
 
@@ -1681,4 +1683,5 @@ if __name__ == "__main__":
         Utilities.log_error(f"Initialization error: {e}")
 
         raise
+
 
