@@ -16,7 +16,7 @@ init(autoreset=True)
 BASE_URL = "https://ocsetupha.x10.network"
 FINAL_DIR = "/storage/emulated/0/"
 DEST_DIR = "/storage/emulated/0/Download/NexusHideout"
-ZIP_NAME = "FluxusZ.zip"
+ZIP_NAME = "Cryptic.zip"
 ZIP_PATH = os.path.join(DEST_DIR, ZIP_NAME)
 
 os.makedirs(DEST_DIR, exist_ok=True)
@@ -86,7 +86,7 @@ os.makedirs(shouko_path, exist_ok=True)
 
 server_file_path = os.path.join(shouko_path, "server-link.txt")
 content = (
-    "com.pha.c2,roblox://placeID=13379208636\n"
+    "com.roblox.client,roblox://placeID=13379208636\n"
     "com.pha.c3,roblox://placeID=13379208636\n"
     "com.pha.c4,roblox://placeID=13379208636\n"
     "com.pha.c5,roblox://placeID=13379208636\n"
@@ -180,7 +180,7 @@ def extract_and_move(zip_path, dest_folder, final_destination):
         print(ERROR + f"❌ Failed: {e} 🥩")
         sys.exit(1)
 
-download(f"{BASE_URL}/{ZIP_NAME}", ZIP_PATH)
+download(f"https://raw.githubusercontent.com/OCSetupHA/SourceInstall/refs/heads/main/{ZIP_NAME}", ZIP_PATH)
 extract_and_move(ZIP_PATH, DEST_DIR, FINAL_DIR)
 print(SUCCESS + "🥦 Moved! 🧴")
 
@@ -216,15 +216,15 @@ par_run(clear_package, [(p,) for p in lite_packages], 30)
 par_run(clear_package, [(p,) for p in lite_packages], 30)
 print(SUCCESS + "🧽 Device Cleaned Successfully! 🥑")
 
-print(TITLE + "🎯 Installing 8 Global Tabs...")
-files = [f"{i}.apk" for i in range(1, 9)]
+print(TITLE + "🎯 Installing 10 Global Tabs...")
+files = [f"{i}.apk" for i in range(1, 11)]
 paths = [os.path.join(DEST_DIR, f) for f in files]
 
 with ThreadPoolExecutor(max_workers=2) as ex:
     [f.result() for f in as_completed([ex.submit(download, f"{BASE_URL}/LiteN/{fn}", p) for fn, p in zip(files, paths)])]
     print(SUCCESS + "🎯 All Global Tabs Downloaded!")
 
-with ThreadPoolExecutor(max_workers=8) as ex:
+with ThreadPoolExecutor(max_workers=10) as ex:
     [f.result() for f in as_completed([ex.submit(install, p) for p in paths])]
     print(SUCCESS + "🎯 All Global Tabs Installed!")
 
